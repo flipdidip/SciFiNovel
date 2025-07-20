@@ -5,6 +5,7 @@ import logoSvg from "/earth-space-logo.svg";
 
 const Header = () => {
   const [isChaptersDropdownOpen, setIsChaptersDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const chapters = [
     { id: 1, title: "Farewell to the Blue Planet", available: true },
@@ -12,17 +13,32 @@ const Header = () => {
     { id: 3, title: "Coming Soon", available: false },
   ];
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsChaptersDropdownOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-content">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={closeMobileMenu}>
           <img src={logoSvg} alt="SciFiNovel Logo" className="logo-image" />
           <h1>SciFiNovel</h1>
         </Link>
-        <nav className="header-nav">
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
+
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle mobile menu"
+        >
+          <span className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <nav className={`header-nav ${isMobileMenuOpen ? "mobile-open" : ""}`}>
           <div className="dropdown">
             <button
               className="nav-link dropdown-toggle"
@@ -41,7 +57,7 @@ const Header = () => {
                       <Link
                         to={`/chapter/${chapter.id}`}
                         className="dropdown-link"
-                        onClick={() => setIsChaptersDropdownOpen(false)}
+                        onClick={closeMobileMenu}
                       >
                         Chapter {chapter.id}: {chapter.title}
                       </Link>
@@ -55,7 +71,7 @@ const Header = () => {
               </div>
             )}
           </div>
-          <Link to="/impressum" className="nav-link">
+          <Link to="/impressum" className="nav-link" onClick={closeMobileMenu}>
             Impressum
           </Link>
         </nav>
