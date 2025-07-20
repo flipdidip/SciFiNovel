@@ -3,14 +3,86 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.9);
-  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light mode variables (default) */
+:root {
+  color-scheme: light;
+
+  /* Background colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-gradient: linear-gradient(135deg, #f0f2f5, #e9ecef);
+  --bg-header: linear-gradient(135deg, #ffffff, #f8f9fa);
+  --bg-hero: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.1),
+    rgba(40, 167, 69, 0.1)
+  );
+
+  /* Text colors */
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-inverse: #ffffff;
+
+  /* Accent colors */
+  --accent-primary: #007bff;
+  --accent-secondary: #28a745;
+  --accent-gradient: linear-gradient(45deg, #007bff, #28a745);
+
+  /* Border and shadow colors */
+  --border-color: rgba(0, 123, 255, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --scrollbar-track: #e9ecef;
+  --scrollbar-thumb: #007bff;
+  --scrollbar-thumb-hover: #28a745;
+
+  /* Interactive states */
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  --active-overlay: rgba(0, 123, 255, 0.1);
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    /* Background colors */
+    --bg-primary: linear-gradient(135deg, #0f0f23, #1a1a2e);
+    --bg-secondary: #1a1a2e;
+    --bg-gradient: linear-gradient(135deg, #0f0f23, #1a1a2e);
+    --bg-header: linear-gradient(135deg, #1a1a2e, #16213e);
+    --bg-hero: linear-gradient(
+      135deg,
+      rgba(0, 212, 255, 0.1),
+      rgba(0, 255, 136, 0.1)
+    );
+
+    /* Text colors */
+    --text-primary: rgba(255, 255, 255, 0.9);
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-inverse: #212529;
+
+    /* Accent colors */
+    --accent-primary: #00d4ff;
+    --accent-secondary: #00ff88;
+    --accent-gradient: linear-gradient(45deg, #00d4ff, #00ff88);
+
+    /* Border and shadow colors */
+    --border-color: rgba(0, 212, 255, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --scrollbar-track: #1a1a2e;
+    --scrollbar-thumb: #00d4ff;
+    --scrollbar-thumb-hover: #00ff88;
+
+    /* Interactive states */
+    --hover-overlay: rgba(255, 255, 255, 0.1);
+    --active-overlay: rgba(0, 212, 255, 0.2);
+  }
 }
 
 * {
@@ -22,7 +94,8 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  background: var(--bg-primary);
+  color: var(--text-primary);
   overflow-x: hidden;
 }
 

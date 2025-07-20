@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
-  color: white;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 * {
@@ -17,24 +17,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  background: var(--bg-primary);
 }
 
 /* Global link styles */
 a {
-  color: #00d4ff;
+  color: var(--accent-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #00ff88;
+  color: var(--accent-secondary);
 }
 
 /* Global button styles */
 button {
-  background: linear-gradient(135deg, #00d4ff, #00ff88);
+  background: var(--accent-gradient);
   border: none;
-  color: white;
+  color: var(--text-inverse);
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   cursor: pointer;
@@ -53,14 +53,14 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a2e;
+  background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00d4ff;
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00ff88;
+  background: var(--scrollbar-thumb-hover);
 }

@@ -7,20 +7,16 @@
 .hero-section {
   text-align: center;
   padding: 3rem 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 212, 255, 0.1),
-    rgba(0, 255, 136, 0.1)
-  );
+  background: var(--bg-hero);
   border-radius: 12px;
   margin-bottom: 3rem;
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  border: 1px solid var(--border-color);
 }
 
 .hero-section h1 {
   font-size: 3rem;
   margin: 0 0 1rem 0;
-  background: linear-gradient(45deg, #00d4ff, #00ff88);
+  background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,7 +24,7 @@
 
 .hero-subtitle {
   font-size: 1.3rem;
-  color: #00d4ff;
+  color: var(--accent-primary);
   margin: 0 0 1.5rem 0;
   font-weight: 300;
 }
@@ -41,7 +37,7 @@
 .hero-description p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: var(--text-secondary);
 }
 
 .features-section {
@@ -52,7 +48,7 @@
   text-align: center;
   font-size: 2.5rem;
   margin: 0 0 2rem 0;
-  color: #00d4ff;
+  color: var(--accent-primary);
 }
 
 .features-grid {
@@ -63,18 +59,18 @@
 }
 
 .feature-card {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: var(--bg-header);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid var(--border-color);
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  border-color: #00d4ff;
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px var(--border-color);
 }
 
 .feature-icon {
@@ -83,13 +79,13 @@
 }
 
 .feature-card h3 {
-  color: #00ff88;
+  color: var(--accent-secondary);
   margin: 0 0 1rem 0;
   font-size: 1.3rem;
 }
 
 .feature-card p {
-  color: #e0e0e0;
+  color: var(--text-secondary);
   line-height: 1.5;
   margin: 0;
 }
