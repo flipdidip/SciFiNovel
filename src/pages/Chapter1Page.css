@@ -3,18 +3,19 @@
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.8;
+  color: var(--text-primary);
 }
 
 .chapter-header {
   text-align: center;
   margin-bottom: 3rem;
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 1rem;
 }
 
 .chapter-header h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -23,7 +24,7 @@
   justify-content: center;
   gap: 2rem;
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: var(--text-secondary);
 }
 
 .chapter-content {
@@ -45,40 +46,44 @@
 
 .chapter-text {
   font-size: 1.1rem;
-  color: #2c3e50;
+  color: var(--text-primary);
 }
 
 .chapter-text p {
   margin-bottom: 1.5rem;
   text-align: justify;
+  color: var(--text-primary);
 }
 
 .audio-player {
-  background: #ecf0f1;
+  background: var(--bg-header);
+  color: var(--text-primary);
   padding: 1rem;
   border-radius: 8px;
   margin: 2rem 0;
   text-align: center;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid var(--accent-primary);
+  border: 1px solid var(--border-color);
 }
 
 .chapter-footer {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #bdc3c7;
+  border-top: 1px solid var(--border-color);
 }
 
 .chapter-notes h3 {
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
 .chapter-notes p {
   font-style: italic;
-  color: #7f8c8d;
-  background: #f8f9fa;
+  color: var(--text-secondary);
+  background: var(--bg-header);
   padding: 1rem;
   border-radius: 5px;
+  border: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
