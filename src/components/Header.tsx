@@ -22,8 +22,8 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <img src={logoSvg} alt="SciFiNovel Logo" className="logo-image" />
-          <h1>SciFiNovel</h1>
+          <img src={logoSvg} alt="The Extinction Gradient Logo" className="logo-image" />
+          <h1>The Extinction Gradient</h1>
         </Link>
 
         <button

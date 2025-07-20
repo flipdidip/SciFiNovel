@@ -82,4 +82,4 @@
 
 Your implementation provides **excellent protection** for a personal open-source project while maintaining full German legal compliance. The interactive system significantly reduces automated data harvesting while still meeting TMG requirements.
 
-**Bottom Line**: You can safely proceed with this setup for your SciFiNovel project! 🎉
+**Bottom Line**: You can safely proceed with this setup for your The Extinction Gradient project! 🎉

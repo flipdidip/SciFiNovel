@@ -1,4 +1,4 @@
-# GitHub Secrets Setup for SciFiNovel
+# GitHub Secrets Setup for The Extinction Gradient
 
 ## Required Secrets
 

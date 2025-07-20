@@ -1,4 +1,4 @@
-# SciFiNovel
+# The Extinction Gradient
 
 A React + TypeScript application built with Vite.
 

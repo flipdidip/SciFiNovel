@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="hero-section">
-        <h1>Welcome to SciFiNovel</h1>
+        <h1>Welcome to The Extinction Gradient</h1>
         <p className="hero-subtitle">A Science Fiction Blog Experience</p>
         <div className="hero-description">
           <p>

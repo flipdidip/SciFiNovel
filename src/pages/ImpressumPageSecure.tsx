@@ -116,7 +116,7 @@ const ImpressumPage = () => {
         <section className="impressum-section">
           <h2>Legal Information</h2>
           <div className="info-block">
-            <h3>SciFiNovel Project</h3>
+            <h3>The Extinction Gradient Project</h3>
             <p>
               This is an interactive science fiction novel application created
               for educational and entertainment purposes.
@@ -128,7 +128,7 @@ const ImpressumPage = () => {
           <h2>Contact Information</h2>
           <div className="info-block">
             <p>
-              <strong>Project:</strong> SciFiNovel
+              <strong>Project:</strong> The Extinction Gradient
             </p>
             <p>
               <strong>Repository:</strong>{" "}
