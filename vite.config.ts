@@ -2,7 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: "/SciFiNovel/",
-});
+  // Only use base path in production build
+  base: command === "build" ? "/SciFiNovel/" : "/",
+}));

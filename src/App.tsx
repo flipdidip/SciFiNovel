@@ -6,8 +6,11 @@ import ImpressumPage from "./pages/ImpressumPage";
 import "./App.css";
 
 function App() {
+  // Use basename only in production, not in development
+  const basename = import.meta.env.PROD ? "/SciFiNovel" : "";
+
   return (
-    <Router basename="/SciFiNovel">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
