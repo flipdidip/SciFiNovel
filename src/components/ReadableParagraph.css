@@ -1,0 +1,91 @@
+.readable-paragraph {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.readable-paragraph:hover .read-aloud-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.read-aloud-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: -1.5rem;
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  z-index: 10;
+}
+
+.read-aloud-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(0) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+}
+
+.read-aloud-btn.reading {
+  opacity: 1;
+  background: var(--accent-secondary);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  }
+}
+
+.read-aloud-btn svg {
+  transition: all 0.2s ease;
+}
+
+.read-aloud-btn:active svg {
+  transform: scale(0.9);
+}
+
+/* Ensure the paragraph has relative positioning for the button */
+.readable-paragraph p {
+  margin: 0;
+  padding-right: 3rem; /* Space for the button */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .read-aloud-btn {
+    opacity: 1; /* Always visible on mobile */
+    position: static;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .readable-paragraph p {
+    padding-right: 0;
+  }
+
+  .readable-paragraph {
+    display: flex;
+    flex-direction: column;
+  }
+}
