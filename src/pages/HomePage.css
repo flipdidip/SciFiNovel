@@ -51,6 +51,108 @@
   color: var(--accent-primary);
 }
 
+.chapters-navigation {
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.chapters-navigation h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  color: var(--accent-primary);
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.chapter-card {
+  background: var(--bg-header);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.chapter-card.available {
+  border-color: var(--accent-primary);
+}
+
+.chapter-card.available:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--border-color);
+  border-color: var(--accent-secondary);
+}
+
+.chapter-card.upcoming {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.chapter-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.chapter-card.available .chapter-number {
+  background: var(--accent-gradient);
+}
+
+.chapter-card.upcoming .chapter-number {
+  background: var(--text-secondary);
+}
+
+.chapter-info {
+  flex: 1;
+}
+
+.chapter-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-secondary);
+  font-size: 1.2rem;
+}
+
+.chapter-info p {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.chapter-status {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.chapter-card.available .chapter-status {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.chapter-card.upcoming .chapter-status {
+  background: var(--border-color);
+  color: var(--text-secondary);
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -107,16 +209,32 @@
     font-size: 1.1rem;
   }
 
-  .features-section h2 {
+  .features-section h2,
+  .chapters-navigation h2 {
     font-size: 2rem;
   }
 
-  .features-grid {
+  .features-grid,
+  .chapters-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
   .feature-card {
     padding: 1.5rem;
+  }
+
+  .chapter-card {
+    padding: 1rem;
+  }
+
+  .chapter-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .chapter-info h3 {
+    font-size: 1.1rem;
   }
 }

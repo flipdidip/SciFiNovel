@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -5,43 +6,55 @@ const HomePage = () => {
     <div className="home-page">
       <div className="hero-section">
         <h1>Welcome to SciFiNovel</h1>
-        <p className="hero-subtitle">
-          Embark on an interactive journey through the cosmos
-        </p>
+        <p className="hero-subtitle">A Science Fiction Blog Experience</p>
         <div className="hero-description">
           <p>
-            Experience cutting-edge science fiction storytelling where your
-            choices shape the narrative. Explore distant worlds, encounter alien
-            civilizations, and navigate complex moral dilemmas in this immersive
-            interactive novel.
+            Join me on an extraordinary journey as I craft a science fiction
+            novel chapter by chapter, right here on this blog. Experience
+            immersive storytelling with rich illustrations, atmospheric
+            soundscapes, and short videos that bring the narrative to life.
+          </p>
+          <p>
+            Follow along as the story unfolds in real-time, witness the creative
+            process behind modern digital storytelling. This is about exploring
+            new frontiers in creative expression and interactive narrative
+            experiences.
+          </p>
+          <p className="disclaimer">
+            <em>
+              This project utilizes AI as a creative support tool in the
+              development process.
+            </em>
           </p>
         </div>
       </div>
 
-      <div className="features-section">
-        <h2>Features</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            <div className="feature-icon">🚀</div>
-            <h3>Space Exploration</h3>
-            <p>Journey through vast galaxies and discover new worlds</p>
+      <div className="chapters-navigation">
+        <h2>Story Chapters</h2>
+        <div className="chapters-grid">
+          <Link to="/chapter/1" className="chapter-card available">
+            <div className="chapter-number">1</div>
+            <div className="chapter-info">
+              <h3>The Signal</h3>
+              <p>A mysterious transmission from Vega changes everything</p>
+              <span className="chapter-status">Available Now</span>
+            </div>
+          </Link>
+          <div className="chapter-card upcoming">
+            <div className="chapter-number">2</div>
+            <div className="chapter-info">
+              <h3>Coming Soon</h3>
+              <p>The next chapter in our journey</p>
+              <span className="chapter-status">In Progress</span>
+            </div>
           </div>
-          <div className="feature-card">
-            <div className="feature-icon">🤖</div>
-            <h3>AI Companions</h3>
-            <p>
-              Meet artificial intelligences that challenge your understanding
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">⚡</div>
-            <h3>Dynamic Choices</h3>
-            <p>Your decisions create unique storylines and endings</p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">🌌</div>
-            <h3>Rich Universe</h3>
-            <p>Immerse yourself in detailed sci-fi environments</p>
+          <div className="chapter-card upcoming">
+            <div className="chapter-number">3</div>
+            <div className="chapter-info">
+              <h3>Coming Soon</h3>
+              <p>More adventures await</p>
+              <span className="chapter-status">Planned</span>
+            </div>
           </div>
         </div>
       </div>
