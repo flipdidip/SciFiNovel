@@ -15,21 +15,24 @@
   <circle cx="100" cy="100" r="95" stroke="#C0C0C0" stroke-width="10" fill="url(#spaceGradient)" />
 
   <!-- Earth -->
-  <circle cx="100" cy="100" r="40" fill="url(#earthGradient)" />
+  <circle cx="100" cy="100" r="70" fill="url(#earthGradient)" />
 
   <!-- Landmasses (Abstract Shapes) -->
-  <path d="M90,100 C85,95 75,110 80,115 C85,120 95,115 90,100" fill="#66BB66" opacity="0.8"/>
-  <path d="M110,95 C115,90 125,100 120,105 C115,110 105,105 110,95" fill="#66BB66" opacity="0.8"/>
+  <path d="M75,100 C65,90 45,120 55,135 C70,150 90,135 75,100" fill="#66BB66" opacity="0.8"/>
+  <path d="M125,85 C140,70 160,100 150,120 C135,140 115,120 125,85" fill="#66BB66" opacity="0.8"/>
+  <path d="M90,130 C100,140 120,145 130,135 C125,125 105,125 90,130" fill="#66BB66" opacity="0.8"/>
 
   <!-- Swirling Clouds -->
-  <path d="M75,90 C85,80 115,80 125,90" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.5"/>
-  <path d="M80,110 C95,105 105,115 120,110" stroke="#E0F8FF" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M50,75 C70,55 130,55 150,75" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M60,125 C85,115 115,130 140,125" stroke="#E0F8FF" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M75,95 C95,85 105,105 125,95" stroke="#E0F8FF" stroke-width="1.5" fill="none" opacity="0.3"/>
 
   <!-- Stars -->
-  <circle cx="30" cy="40" r="2" fill="#FFFFFF" />
-  <circle cx="170" cy="60" r="1.5" fill="#FFFFFF" />
-  <circle cx="150" cy="140" r="1" fill="#FFFFFF" />
+  <circle cx="25" cy="30" r="2" fill="#FFFFFF" />
+  <circle cx="175" cy="45" r="1.5" fill="#FFFFFF" />
+  <circle cx="160" cy="155" r="1" fill="#FFFFFF" />
+  <circle cx="35" cy="170" r="1.5" fill="#FFFFFF" />
 
   <!-- Optional Glow -->
-  <circle cx="140" cy="60" r="10" fill="#FFFFFF" opacity="0.2" />
+  <circle cx="170" cy="50" r="8" fill="#FFFFFF" opacity="0.2" />
 </svg>

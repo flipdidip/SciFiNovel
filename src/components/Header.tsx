@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Header.css";
+import logoSvg from "/earth-space-logo.svg";
 
 const Header = () => {
   const [isChaptersDropdownOpen, setIsChaptersDropdownOpen] = useState(false);
@@ -15,6 +16,7 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <Link to="/" className="logo">
+          <img src={logoSvg} alt="SciFiNovel Logo" className="logo-image" />
           <h1>SciFiNovel</h1>
         </Link>
         <nav className="header-nav">
