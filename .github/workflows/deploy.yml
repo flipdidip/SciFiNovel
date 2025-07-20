@@ -30,6 +30,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_AUTHOR_NAME: ${{ secrets.AUTHOR_NAME }}
+          VITE_AUTHOR_ADDRESS: ${{ secrets.AUTHOR_ADDRESS }}
+          VITE_AUTHOR_CITY: ${{ secrets.AUTHOR_CITY }}
+          VITE_AUTHOR_EMAIL: ${{ secrets.AUTHOR_EMAIL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
