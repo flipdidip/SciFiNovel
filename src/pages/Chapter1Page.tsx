@@ -1,5 +1,6 @@
 import "./Chapter1Page.css";
-import chapter1Image from "/chapter1-earth-from-orbit.png";
+import chapter1ImageEarth from "/chapter1-earth-from-orbit.png";
+import chapter1ImageShip from "/chapter1-ship-from-station.png";
 import ReadableParagraph from "../components/ReadableParagraph";
 
 const Chapter1Page = () => {
@@ -29,7 +30,7 @@ const Chapter1Page = () => {
           <div className="chapter-illustration">
             <figure className="chapter-image">
               <img
-                src={chapter1Image}
+                src={chapter1ImageEarth}
                 alt="Earth viewed from orbital station showing blue oceans, brown continents, and dome cities gleaming in the sunlight"
                 className="earth-from-orbit"
               />
@@ -109,6 +110,20 @@ const Chapter1Page = () => {
             another young person trying to do their job while the world ended
             around them.
           </ReadableParagraph>
+
+          <div className="chapter-illustration">
+            <figure className="chapter-image">
+              <img
+                src={chapter1ImageShip}
+                alt="Ship viewed from orbital station showing the Endeavor's sleek design and massive engines and its huge shield at the end"
+                className="ship-from-station"
+              />
+              <figcaption>
+                The Endeavor, humanity's first interstellar ship, ready for its
+                maiden voyage to TRAPPIST-1.
+              </figcaption>
+            </figure>
+          </div>
 
           <ReadableParagraph>
             He nodded and followed her through the airlock into the ship's
