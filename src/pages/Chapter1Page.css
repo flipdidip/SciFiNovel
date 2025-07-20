@@ -4,27 +4,36 @@
   padding: 2rem;
   line-height: 1.8;
   color: var(--text-primary);
+  background: var(--bg-primary);
 }
 
 .chapter-header {
   text-align: center;
   margin-bottom: 3rem;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 1rem;
+  padding: 2rem;
+  background: var(--bg-hero);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 5px 20px var(--shadow-color);
 }
 
 .chapter-header h1 {
-  font-size: 2.5rem;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  margin: 0 0 1rem 0;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
 }
 
 .chapter-meta {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .chapter-content {
@@ -32,58 +41,114 @@
 }
 
 .chapter-illustration {
-  margin: 2rem 0;
+  margin: 3rem 0;
   text-align: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
 }
 
-.illustration-placeholder {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 3rem;
-  border-radius: 10px;
+.chapter-image {
+  margin: 0;
+  padding: 0;
+}
+
+.earth-from-orbit {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.earth-from-orbit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+}
+
+.chapter-image figcaption {
+  margin-top: 1.5rem;
   font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .chapter-text {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--text-primary);
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin: 2rem 0;
 }
 
 .chapter-text p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   text-align: justify;
   color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.chapter-text p:last-child {
+  margin-bottom: 0;
 }
 
 .audio-player {
   background: var(--bg-header);
   color: var(--text-primary);
-  padding: 1rem;
-  border-radius: 8px;
-  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 3rem 0;
   text-align: center;
-  border-left: 4px solid var(--accent-primary);
   border: 1px solid var(--border-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.audio-player::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-gradient);
 }
 
 .chapter-footer {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  padding: 2rem;
+  background: var(--bg-hero);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
 }
 
 .chapter-notes h3 {
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .chapter-notes p {
   font-style: italic;
   color: var(--text-secondary);
-  background: var(--bg-header);
-  padding: 1rem;
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -91,16 +156,52 @@
     padding: 1rem;
   }
 
+  .chapter-header {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .chapter-header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
   }
 
   .chapter-meta {
     flex-direction: column;
     gap: 0.5rem;
+    font-size: 0.9rem;
   }
 
   .chapter-text {
-    font-size: 1rem;
+    font-size: 1.05rem;
+    padding: 1.5rem;
+  }
+
+  .chapter-text p {
+    margin-bottom: 1.5rem;
+  }
+
+  .chapter-illustration {
+    margin: 2rem 0;
+    padding: 0.5rem;
+  }
+
+  .chapter-image figcaption {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .chapter-footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+  }
+
+  .chapter-notes h3 {
+    font-size: 1.3rem;
+  }
+
+  .earth-from-orbit:hover {
+    transform: none;
+    box-shadow: 0 10px 30px var(--shadow-color);
   }
 }

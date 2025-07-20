@@ -35,8 +35,11 @@ const HomePage = () => {
           <Link to="/chapter/1" className="chapter-card available">
             <div className="chapter-number">1</div>
             <div className="chapter-info">
-              <h3>The Signal</h3>
-              <p>A mysterious transmission from Vega changes everything</p>
+              <h3>Farewell to the Blue Planet</h3>
+              <p>
+                Alaric Sen watches Earth for the last time as humanity departs
+                for the stars
+              </p>
               <span className="chapter-status">Available Now</span>
             </div>
           </Link>

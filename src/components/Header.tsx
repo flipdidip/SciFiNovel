@@ -6,7 +6,7 @@ const Header = () => {
   const [isChaptersDropdownOpen, setIsChaptersDropdownOpen] = useState(false);
 
   const chapters = [
-    { id: 1, title: "The Signal", available: true },
+    { id: 1, title: "Farewell to the Blue Planet", available: true },
     { id: 2, title: "Coming Soon", available: false },
     { id: 3, title: "Coming Soon", available: false },
   ];
