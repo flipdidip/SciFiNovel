@@ -1,4 +1,5 @@
 import "./Chapter1Page.css";
+import chapter1Image from "/chapter1-earth-from-orbit.png";
 
 const Chapter1Page = () => {
   return (
@@ -11,20 +12,6 @@ const Chapter1Page = () => {
         </div>
       </div>
 
-      {/* <div className="chapter-illustration">
-        <figure className="chapter-image">
-          <img
-            src="/chapter1-earth-from-orbit.png"
-            alt="Earth viewed from orbital station showing blue oceans, brown continents, and dome cities gleaming in the sunlight"
-            className="earth-from-orbit"
-          />
-          <figcaption>
-            Earth as seen from the orbital departure station - the last view
-            humanity's interstellar pioneers will have of their home world.
-          </figcaption>
-        </figure>
-      </div> */}
-
       <div className="chapter-content">
         <div className="chapter-text">
           <p>
@@ -36,6 +23,20 @@ const Chapter1Page = () => {
             was mostly brown, punctuated by the silver gleam of dome cities
             where the survivors clustered.
           </p>
+
+          <div className="chapter-illustration">
+            <figure className="chapter-image">
+              <img
+                src={chapter1Image}
+                alt="Earth viewed from orbital station showing blue oceans, brown continents, and dome cities gleaming in the sunlight"
+                className="earth-from-orbit"
+              />
+              <figcaption>
+                Earth as seen from the orbital departure station - the last view
+                humanity's interstellar pioneers will have of their home world.
+              </figcaption>
+            </figure>
+          </div>
 
           <p>
             "Final boarding call for TRAPPIST-1 expedition. All passengers
