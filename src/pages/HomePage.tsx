@@ -36,11 +36,8 @@ const HomePage = () => {
             <div className="chapter-number">1</div>
             <div className="chapter-info">
               <h3>Farewell to the Blue Planet</h3>
-              <p>
-                Alaric Sen watches Earth for the last time as humanity departs
-                for the stars
-              </p>
-              <span className="chapter-status">Available Now</span>
+              <p>Alaric Sen departs for the stars</p>
+              <span className="chapter-status">In Progress</span>
             </div>
           </Link>
           <div className="chapter-card upcoming">
@@ -48,7 +45,7 @@ const HomePage = () => {
             <div className="chapter-info">
               <h3>Coming Soon</h3>
               <p>The next chapter in our journey</p>
-              <span className="chapter-status">In Progress</span>
+              <span className="chapter-status">Planned</span>
             </div>
           </div>
           <div className="chapter-card upcoming">
