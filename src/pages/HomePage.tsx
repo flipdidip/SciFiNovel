@@ -27,6 +27,27 @@ const HomePage = () => {
         </div>
       </div>
 
+      <div className="blog-updates">
+        <div className="blog-post">
+          <div className="blog-post-header">
+            <h3>Chapter 1 Complete: "Farewell to the Blue Planet"</h3>
+            <span className="blog-post-date">July 21, 2025</span>
+          </div>
+          <div className="blog-post-content">
+            <p>
+              I'm excited to announce that Chapter 1 of "The Extinction
+              Gradient" is now complete! Join Alaric Sen as he takes one last
+              look at Earth.
+            </p>
+            <p>
+              <Link to="/chapter/1" className="read-chapter-link">
+                Read Chapter 1 now →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="chapters-navigation">
         <h2>Story Chapters</h2>
         <div className="chapters-grid">

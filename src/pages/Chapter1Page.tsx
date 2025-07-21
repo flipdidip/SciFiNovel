@@ -6,7 +6,8 @@ const Chapter1Page = () => {
   return (
     <div className="chapter-page">
       <div className="chapter-header">
-        <h1>Chapter 1: Farewell to the Blue Planet</h1>
+        <h1>Farewell to the Blue Planet</h1>
+        <h2>Chapter 1, Alaric Sen</h2>
         <div className="chapter-meta">
           <span className="chapter-date">Published: July 20, 2025</span>
         </div>
