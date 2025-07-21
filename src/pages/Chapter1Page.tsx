@@ -10,8 +10,6 @@ const Chapter1Page = () => {
         <h1>Chapter 1: Farewell to the Blue Planet</h1>
         <div className="chapter-meta">
           <span className="chapter-date">Published: July 20, 2025</span>
-          <span className="chapter-updated">Last Updated: July 20, 2025</span>
-          <span className="reading-time">~12 min read</span>
         </div>
       </div>
 
@@ -43,18 +41,15 @@ const Chapter1Page = () => {
 
           <ReadableParagraph>
             "Final boarding call for TRAPPIST-1 expedition. All passengers
-            report to Departure Bay Seven."
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            The announcement echoed through the passenger control area, sterile
-            and emotionless. Alaric didn't move. His reflection in the window
-            showed a man who could pass for somewhere between thirty and forty,
-            though the years behind those eyes told a different story
-            entirely—one he'd long since stopped trying to explain. He'd learned
-            that moments like these demanded their due reverence. This would be
-            the last time human eyes would see Earth from this perspective
-            for... well, that was the problem, wasn't it?
+            report to Departure Bay Seven." The announcement echoed through the
+            passenger control area, sterile and emotionless. Alaric didn't move.
+            His reflection in the window showed a man who could pass for
+            somewhere between thirty and forty, though the years behind those
+            eyes told a different story entirely—one he'd long since stopped
+            trying to explain. He'd learned that moments like these demanded
+            their due reverence. This would be the last time human eyes would
+            see Earth from this perspective for... well, that was the problem,
+            wasn't it?
           </ReadableParagraph>
 
           <ReadableParagraph>
@@ -63,12 +58,9 @@ const Chapter1Page = () => {
             would feel like twenty-four years to those aboard the ship. But
             Earth? Earth would age the full forty years. The few million humans
             left down there would either adapt, evolve, or perish entirely while
-            he slept in cryogenic suspension.
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            If he ever came back—and that was a monumental if—he'd return to a
-            world that had moved on without him, assuming it survived at all.
+            he slept in cryogenic suspension. If he ever came back—and that was
+            a monumental if—he'd return to a world that had moved on without
+            him, assuming it survived at all.
           </ReadableParagraph>
 
           <ReadableParagraph>
@@ -94,9 +86,6 @@ const Chapter1Page = () => {
           <ReadableParagraph>
             "Dr. Sen?" A young technician with nervous eyes approached him at
             the boarding gate. "We're ready for your final pre-departure check."
-          </ReadableParagraph>
-
-          <ReadableParagraph>
             Alaric studied her for a moment—the way she held her shoulders too
             rigid, the slight tremor in her voice that spoke of either
             inexperience or carefully controlled fear. Her badge showed standard
@@ -131,38 +120,28 @@ const Chapter1Page = () => {
             stern, most of it engine and fuel reserves. The passenger
             compartment felt almost cozy by comparison—just four hundred
             cryo-pods arranged in neat rows, each one a technological marvel
-            that could keep a normal human body stable for decades.
+            that could keep a normal human body stable for decades. Also knewing
+            exactly how it worked: controlled cellular dehydration, metabolic
+            suppression, neural activity reduced to barely detectable levels.
+            The human body as close to death as possible while still remaining
+            alive. Another triumph of engineering that had become mundane
+            through understanding.
           </ReadableParagraph>
 
           <ReadableParagraph>
-            Also knewing exactly how it worked: controlled cellular dehydration,
-            metabolic suppression, neural activity reduced to barely detectable
-            levels. The human body as close to death as possible while still
-            remaining alive. Another triumph of engineering that had become
-            mundane through understanding.
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            "Pod 127," she technician said, gesturing to a unit near the
-            observation windows. "You'll have a view of TRAPPIST-1 when we
-            arrive."
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            "Assuming the windows aren't completely fogged by cosmic dust after
+            "Pod 127, You'll have a view of TRAPPIST-1 when we arrive." she
+            said, gesturing to a unit near the observation windows. "Assuming
+            the windows aren't completely fogged by cosmic dust after
             twenty-four years," Alaric replied, but he was smiling. He
-            appreciated the gesture.
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            As he settled into the cryo-pod's cushioned interior, Alaric took
-            one last look through the ship's porthole. Earth hung there, blue
-            and wounded and stubborn. The planet that had given birth to
-            consciousness, to art, to the very technology that was now carrying
-            its children to the stars. His home for a time that felt like an
-            eternity, a place which had nurtured him, challenged him, and
-            ultimately become his prison. Now finally he could leave and reach
-            out for new adventures, boldly go where he had never gone before.
+            appreciated the gesture. As he settled into the cryo-pod's cushioned
+            interior, Alaric took one last look through the ship's porthole.
+            Earth hung there, blue and wounded and stubborn. The planet that had
+            given birth to consciousness, to art, to the very technology that
+            was now carrying its children to the stars. His home for a time that
+            felt like an eternity, a place which had nurtured him, challenged
+            him, and ultimately become his prison. Now finally he could leave
+            and reach out for new adventures, boldly go where he had never gone
+            before.
           </ReadableParagraph>
 
           <ReadableParagraph>
@@ -174,20 +153,16 @@ const Chapter1Page = () => {
             imagine the bitter irony: survivors of Earth's near-extinction
             waging war against each other among the stars, like something out of
             a badly written science fiction novel. Human nature, it seemed,
-            traveled at any speed. He continous to speculate about this for
-            hours.
-          </ReadableParagraph>
-
-          <ReadableParagraph>
-            His philosophical musings were cut short by a deep rumble that
-            vibrated through the ship's hull. "ATTENTION ALL PASSENGERS," blared
-            the ship's AI in a voice that could wake the dead, "MANOUVERING
-            ENGINES ARE NOW ONLINE. INITIATING ORBITAL DEPARTURE SEQUENCE. ALL
-            PERSONNEL PREPARE FOR CRYOGENIC INITIALIZATION IN T-MINUS FIFTEEN
-            MINUTES." The Endeavor shuddered as massive docking clamps released
-            their grip on the orbital station, and Alaric felt the subtle shift
-            as they began their slow drift away from Earth's gravitational
-            embrace.
+            traveled at any speed. His mind drifted to the implications and he
+            lost track of time. His philosophical musings were cut short by a
+            deep rumble that vibrated through the ship's hull. "ATTENTION ALL
+            PASSENGERS," blared the ship's AI in a voice that could wake the
+            dead, "MANOUVERING ENGINES ARE NOW ONLINE. INITIATING ORBITAL
+            DEPARTURE SEQUENCE. ALL PERSONNEL PREPARE FOR CRYOGENIC
+            INITIALIZATION IN T-MINUS FIFTEEN MINUTES." The Endeavor shuddered
+            as massive docking clamps released their grip on the orbital
+            station, and Alaric felt the subtle shift as they began their slow
+            drift away from Earth's gravitational embrace.
           </ReadableParagraph>
 
           <ReadableParagraph>
