@@ -35,7 +35,7 @@ const HomePage = () => {
             <div className="chapter-info">
               <h3>Farewell to the Blue Planet</h3>
               <p>Alaric Sen departs for the stars</p>
-              <span className="chapter-status">In Progress</span>
+              <span className="chapter-status">Done</span>
             </div>
           </Link>
           <div className="chapter-card upcoming">
