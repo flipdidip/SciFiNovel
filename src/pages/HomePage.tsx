@@ -11,14 +11,12 @@ const HomePage = () => {
           <p>
             Join me on an extraordinary journey as I craft a science fiction
             novel chapter by chapter, right here on this blog. Experience
-            immersive storytelling with rich illustrations, atmospheric
-            soundscapes, and short videos that bring the narrative to life.
+            immersive storytelling with rich illustrations that bring the
+            narrative to life.
           </p>
           <p>
             Follow along as the story unfolds in real-time, witness the creative
-            process behind modern digital storytelling. This is about exploring
-            new frontiers in creative expression and interactive narrative
-            experiences.
+            and technical process behind.
           </p>
           <p className="disclaimer">
             <em>
