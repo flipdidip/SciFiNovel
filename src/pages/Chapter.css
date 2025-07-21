@@ -76,8 +76,7 @@
   padding: 0;
 }
 
-.earth-from-orbit,
-.ship-from-station {
+.chapter-image-integration {
   width: 100%;
   max-width: 600px;
   height: auto;

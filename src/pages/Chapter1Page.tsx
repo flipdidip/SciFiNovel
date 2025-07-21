@@ -30,7 +30,7 @@ const Chapter1Page = () => {
               <img
                 src={chapter1ImageEarth}
                 alt="Earth viewed from orbital station showing blue oceans, brown continents, and dome cities gleaming in the sunlight"
-                className="earth-from-orbit"
+                className="chapter-image-integration"
               />
               <figcaption>
                 Earth as seen from the orbital departure station - the last view
@@ -162,7 +162,7 @@ const Chapter1Page = () => {
               <img
                 src={chapter1ImageShip}
                 alt="Ship viewed from orbital station showing the Endeavor's sleek design and massive engines and its huge shield at the end"
-                className="ship-from-station"
+                className="chapter-image-integration"
               />
               <figcaption>
                 The Endeavor, humanity's first interstellar ship, ready for its

@@ -1,4 +1,5 @@
 import "./Chapter.css";
+import chapter2ImageExpedition from "/chapter-2-expedition.png";
 
 const Chapter2Page = () => {
   return (
@@ -30,6 +31,19 @@ const Chapter2Page = () => {
             ocean would still be here tomorrow, but this moment would never come
             again.
           </p>
+
+          <div className="chapter-illustration">
+            <figure className="chapter-image">
+              <img
+                src={chapter2ImageExpedition}
+                alt="Nara Elwin exploring the underwater life of Earth"
+                className="chapter-image-integration"
+              />
+              <figcaption>
+                Nara Elwin exploring the underwater life of Earth.
+              </figcaption>
+            </figure>
+          </div>
 
           <p>
             The absence of most humans was, in truth, the only blessing that had
