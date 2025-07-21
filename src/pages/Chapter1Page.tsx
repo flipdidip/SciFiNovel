@@ -1,7 +1,6 @@
 import "./Chapter1Page.css";
 import chapter1ImageEarth from "/chapter1-earth-from-orbit.png";
 import chapter1ImageShip from "/chapter1-ship-from-station.png";
-import ReadableParagraph from "../components/ReadableParagraph";
 
 const Chapter1Page = () => {
   return (
@@ -15,7 +14,7 @@ const Chapter1Page = () => {
 
       <div className="chapter-content">
         <div className="chapter-text">
-          <ReadableParagraph>
+          <p>
             Alaric Sen pressed his palm against the observation deck's
             reinforced glass, watching Earth rotate slowly beneath the orbital
             station. The planet had never looked more beautiful, or more broken.
@@ -23,7 +22,7 @@ const Chapter1Page = () => {
             ice, continents reshaped by rising seas. What had once been green
             was mostly brown, punctuated by the silver gleam of dome cities
             where the survivors clustered.
-          </ReadableParagraph>
+          </p>
 
           <div className="chapter-illustration">
             <figure className="chapter-image">
@@ -39,7 +38,7 @@ const Chapter1Page = () => {
             </figure>
           </div>
 
-          <ReadableParagraph>
+          <p>
             "Final boarding call for TRAPPIST-1 expedition. All passengers
             report to Departure Bay Seven." The announcement echoed through the
             passenger control area, sterile and emotionless. Alaric didn't move.
@@ -50,9 +49,9 @@ const Chapter1Page = () => {
             their due reverence. This would be the last time human eyes would
             see Earth from this perspective for... well, that was the problem,
             wasn't it?
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             The time dilation equations scrolled unbidden through his mind. At
             higher degrees of light speed, the forty-year journey to TRAPPIST-1
             would feel like twenty-four years to those aboard the ship. But
@@ -61,18 +60,18 @@ const Chapter1Page = () => {
             he slept in cryogenic suspension. If he ever came back—and that was
             a monumental if—he'd return to a world that had moved on without
             him, assuming it survived at all.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             He shouldered his single bag and walked toward the departure bay,
             his footsteps echoing in the nearly empty corridor. Most of the
             other passengers had already boarded—scientists, engineers,
             terraforming specialists, a few artists and philosophers. The last
             hope of human civilization, packaged in a ship powered by technology
             that would have seemed like magic to his great-grandparents.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             The Chen-Hunter drive—named partly after his own theoretical
             contributions, though he'd grown tired of explaining the mechanics
             to anyone who asked. He understood the elegant brutality of it: the
@@ -81,9 +80,9 @@ const Chapter1Page = () => {
             precise timing of fuel pellet deployment. The technical details felt
             meaningless now. What mattered was the result: they could reach 80%
             of light speed, making interstellar travel finally, barely possible.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             "Dr. Sen?" A young technician with nervous eyes approached him at
             the boarding gate. "We're ready for your final pre-departure check."
             Alaric studied her for a moment—the way she held her shoulders too
@@ -98,7 +97,7 @@ const Chapter1Page = () => {
             to be elsewhere during humanity's last exodus. No threat, just
             another young person trying to do their job while the world ended
             around them.
-          </ReadableParagraph>
+          </p>
 
           <div className="chapter-illustration">
             <figure className="chapter-image">
@@ -114,7 +113,7 @@ const Chapter1Page = () => {
             </figure>
           </div>
 
-          <ReadableParagraph>
+          <p>
             He nodded and followed her through the airlock into the ship's
             belly. The Endeavor stretched nearly two kilometers from bow to
             stern, most of it engine and fuel reserves. The passenger
@@ -126,9 +125,9 @@ const Chapter1Page = () => {
             The human body as close to death as possible while still remaining
             alive. Another triumph of engineering that had become mundane
             through understanding.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             "Pod 127, You'll have a view of TRAPPIST-1 when we arrive." she
             said, gesturing to a unit near the observation windows. "Assuming
             the windows aren't completely fogged by cosmic dust after
@@ -142,9 +141,9 @@ const Chapter1Page = () => {
             him, and ultimately become his prison. Now finally he could leave
             and reach out for new adventures, boldly go where he had never gone
             before.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             This was just the beginning, he knew. The first of many expeditions
             that would scatter humanity across the galaxy like seeds on cosmic
             winds. Technology would evolve, colonies would grow, and eventually—
@@ -163,9 +162,9 @@ const Chapter1Page = () => {
             as massive docking clamps released their grip on the orbital
             station, and Alaric felt the subtle shift as they began their slow
             drift away from Earth's gravitational embrace.
-          </ReadableParagraph>
+          </p>
 
-          <ReadableParagraph>
+          <p>
             Why was he going alone? Some journeys, he'd learned, were meant to
             be taken in solitude. TRAPPIST-1 beckoned from forty light-years
             away—seven worlds orbiting a red dwarf star, three of them
@@ -184,7 +183,7 @@ const Chapter1Page = () => {
             wave of sedatives entered his bloodstream. Somewhere in the growing
             darkness, he thought he could still see Earth turning—blue and
             beautiful and impossibly far away.
-          </ReadableParagraph>
+          </p>
         </div>
       </div>
     </div>
