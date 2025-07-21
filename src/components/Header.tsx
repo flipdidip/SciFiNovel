@@ -9,7 +9,7 @@ const Header = () => {
 
   const chapters = [
     { id: 1, title: "Farewell to the Blue Planet", available: true },
-    { id: 2, title: "Coming Soon", available: false },
+    { id: 2, title: "Under the Water", available: true },
     { id: 3, title: "Coming Soon", available: false },
   ];
 
@@ -22,7 +22,11 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <Link to="/" className="logo" onClick={closeMobileMenu}>
-          <img src={logoSvg} alt="The Extinction Gradient Logo" className="logo-image" />
+          <img
+            src={logoSvg}
+            alt="The Extinction Gradient Logo"
+            className="logo-image"
+          />
           <h1>The Extinction Gradient</h1>
         </Link>
 

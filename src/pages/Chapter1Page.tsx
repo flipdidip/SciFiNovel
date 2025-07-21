@@ -1,4 +1,4 @@
-import "./Chapter1Page.css";
+import "./Chapter.css";
 import chapter1ImageEarth from "/chapter1-earth-from-orbit.png";
 import chapter1ImageShip from "/chapter1-ship-from-station.png";
 

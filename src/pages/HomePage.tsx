@@ -31,7 +31,7 @@ const HomePage = () => {
         <div className="blog-post">
           <div className="blog-post-header">
             <h3>Chapter 1 Complete: "Farewell to the Blue Planet"</h3>
-            <span className="blog-post-date">July 21, 2025</span>
+            <span className="blog-post-date">July 20, 2025</span>
           </div>
           <div className="blog-post-content">
             <p>
@@ -55,18 +55,18 @@ const HomePage = () => {
             <div className="chapter-number">1</div>
             <div className="chapter-info">
               <h3>Farewell to the Blue Planet</h3>
-              <p>Alaric Sen departs for the stars</p>
+              <p>Alaric Sen</p>
               <span className="chapter-status">Done</span>
             </div>
           </Link>
-          <div className="chapter-card upcoming">
+          <Link to="/chapter/2" className="chapter-card available">
             <div className="chapter-number">2</div>
             <div className="chapter-info">
-              <h3>Coming Soon</h3>
-              <p>The next chapter in our journey</p>
-              <span className="chapter-status">Planned</span>
+              <h3>Under the Water</h3>
+              <p>Nara Elwin</p>
+              <span className="chapter-status">In Progress</span>
             </div>
-          </div>
+          </Link>
           <div className="chapter-card upcoming">
             <div className="chapter-number">3</div>
             <div className="chapter-info">
