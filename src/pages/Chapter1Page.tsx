@@ -9,7 +9,7 @@ const Chapter1Page = () => {
         <h1>Farewell to the Blue Planet</h1>
         <h2>Chapter 1, Alaric Sen</h2>
         <div className="chapter-meta">
-          <span className="chapter-date">Published: July 20, 2025</span>
+          <span className="chapter-date">Published: July 21, 2025</span>
         </div>
       </div>
 

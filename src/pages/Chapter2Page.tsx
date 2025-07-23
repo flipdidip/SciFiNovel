@@ -8,7 +8,7 @@ const Chapter2Page = () => {
         <h1>Under the Water</h1>
         <h2>Chapter 2, Nara Elwin</h2>
         <div className="chapter-meta">
-          <span className="chapter-date">Published: July 21, 2025</span>
+          <span className="chapter-date">Started: July 22, 2025</span>
         </div>
       </div>
 

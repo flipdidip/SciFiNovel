@@ -9,7 +9,11 @@ const Header = () => {
 
   const chapters = [
     { id: 1, title: "Farewell to the Blue Planet", available: true },
-    { id: 2, title: "Under the Water", available: true },
+    {
+      id: 2,
+      title: "Under the Water",
+      available: import.meta.env.DEV,
+    },
     { id: 3, title: "Coming Soon", available: false },
   ];
 
